@@ -1,0 +1,16 @@
+{
+  "appId": "com.meghaai.app",
+  "appName": "MEGHA AI",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    },
+    "BackgroundRunner": {
+      "label": "com.meghaai.app.background",
+      "src": "src/background.js",
+      "event": "meghaBackgroundVoice"
+    }
+  }
+}
